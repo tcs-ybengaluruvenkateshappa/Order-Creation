@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @Entity
@@ -17,5 +17,5 @@ public class PrestonHoliday {
     @GeneratedValue
     private int id;
     private String holiday;
-    private Date holiday_date;
+    private LocalDateTime holiday_date;
 }
